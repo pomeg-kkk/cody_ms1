@@ -1,0 +1,98 @@
+Script started on 2026-11-04 19:20:51+09:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="250" LINES="75"]
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mmkdir -p bind-site[27mmkdir -p bind-site
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mcat > bind-site/index.html <<'EOF'[27m
+[7m<!DOCTYPE html>[27m
+[7m<html lang="ko">[27m
+[7m<head>[27m
+[7m    <meta charset="UTF-8">[27m
+[7m    <title>Bind Mount Test</title>[27m
+[7m</head>[27m
+[7m<body>[27m
+[7m    <h1>Bind Mount Version 1</h1>[27m
+[7m    <p>첫 번째 웹 페이지입니다.</p>[27m
+[7m</body>[27m
+[7m</html>[27m
+[7mEOF[27m[A[A[A[A[A[A[A[A[A[A[A[A]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ cat > bind-site/index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Bind Mount Test</title>
+</head>
+<body>
+    <h1>Bind Mount Version 1</h1>
+    <p>첫 번째 웹 페이지입니다.</p>
+</body>
+</html>
+EOF
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mcat bind-site/index.html[27mcat bind-site/index.html
+[?2004l<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Bind Mount Test</title>
+</head>
+<body>
+    <h1>Bind Mount Version 1</h1>
+    <p>첫 번째 웹 페이지입니다.</p>
+</body>
+</html>
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker run -d \[27m
+[7m  --name bind-web \[27m
+[7m  -p 8082:80 \[27m
+[7m  --mount type=bind,source="$(pwd)/bind-site",target=/usr/share/nginx/html,readonly \[27m
+[7m  nginx:alpine[27m[A[A[A[A]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ docker run -d \
+  --name bind-web \
+  -p 8082:80 \
+  --mount type=bind,source="$(pwd)/bind-site",target=/usr/share/nginx/html,readonly \
+  nginx:alpine
+[?2004lUnable to find image 'nginx:alpine' locally
+alpine: Pulling from library/nginx
+Digest: sha256:785835ea65db4bba6f021acc0f3be91b0fef76a53fe41f8588c6698d2aed0606
+Status: Downloaded newer image for nginx:alpine
+bf0769d19a9365ca4063f4129866256688ad6fdc855d9278bdc5c883556f69b0
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker ps[27mdocker ps
+[?2004lCONTAINER ID   IMAGE                    COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+bf0769d19a93   nginx:alpine             "/docker-entrypoint.…"   5 seconds ago   Up 5 seconds   0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   bind-web
+c32db618dd72   my-workstation-web:1.0   "/docker-entrypoint.…"   6 minutes ago   Up 6 minutes   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-workstation-web
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mcat > bind-site/index.html <<'EOF'[27m
+[7m<!DOCTYPE html>[27m
+[7m<html lang="ko">[27m
+[7m<head>[27m
+[7m    <meta charset="UTF-8">[27m
+[7m    <title>Bind Mount Test</title>[27m
+[7m</head>[27m
+[7m<body>[27m
+[7m    <h1>Bind Mount Version 2</h1>[27m
+[7m    <p>파일 변경 내용이 Docker에 반영되었습니다!</p>[27m
+[7m</body>[27m
+[7m</html>[27m
+[7mEOF[27m[A[A[A[A[A[A[A[A[A[A[A[A]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ cat > bind-site/index.html <<'EOF'
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Bind Mount Test</title>
+</head>
+<body>
+    <h1>Bind Mount Version 2</h1>
+    <p>파일 변경 내용이 Docker에 반영되었습니다!</p>
+</body>
+</html>
+EOF
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mcurl http://localhost:8082[27mcurl http://localhost:8082
+[?2004l<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Bind Mount Test</title>
+</head>
+<body>
+    <h1>Bind Mount Version 2</h1>
+    <p>파일 변경 내용이 Docker에 반영되었습니다!</p>
+</body>
+</html>
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-04 19:24:18+09:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,41 @@
+Script started on 2026-11-04 18:44:13+09:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="268" LINES="75"]
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ ㅔㅈㅇ
+[?2004lㅔㅈㅇ: command not found
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ pwd
+[?2004l/home/avg21/dev-workstation
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ ls -la
+[?2004ltotal 24
+drwxr-xr-x  6 avg21 avg21 4096 Nov  4 18:42 [0m[01;34m.[0m
+drwxr-x--- 12 avg21 avg21 4096 Nov  4 18:42 [01;34m..[0m
+drwxr-xr-x  2 avg21 avg21 4096 Nov  4 18:42 [01;34mapp[0m
+drwxr-xr-x  2 avg21 avg21 4096 Nov  4 18:42 [01;34mevidence[0m
+drwxr-xr-x  2 avg21 avg21 4096 Nov  4 18:44 [01;34mlogs[0m
+drwxr-xr-x  2 avg21 avg21 4096 Nov  4 18:42 [01;34mpractice[0m
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mcd practice[27mcd practice
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ pwd
+[?2004l/home/avg21/dev-workstation/practice
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ toucj[Kg[Kf[Kh hello.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ ls
+[?2004lhello.txt
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ echo[K[K[K[K[7mecho "Hello Linux" > hello.txt[27mecho "Hello Linux" > hello.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ [7mcat hello.txt[27mcat hello.txt
+[?2004lHello Linux
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ [7mcp hello.txt copy.txt[27mcp hello.txt copy.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ ls
+[?2004lcopy.txt  hello.txt
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ [7mmv copy.txt renamed.txt[27mmv copy.txt renamed.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ [7mls[27mls
+[?2004lhello.txt  renamed.txt
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ [7mrm renamed.txt[27mrm renamed.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ ls
+[?2004lhello.txt
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ [7mmkdir test-folder[27mmkdir test-folder
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ ls
+[?2004lhello.txt  [0m[01;34mtest-folder[0m
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ [7mrmdir test-folder[27mrmdir test-folder
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ ls
+[?2004lhello.txt
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation/practice[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation/practice[00m$ es[Kxit
+[?2004lexit
+
+Script done on 2026-11-04 18:46:37+09:00 [COMMAND_EXIT_CODE="0"]

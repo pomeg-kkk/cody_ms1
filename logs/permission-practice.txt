@@ -1,0 +1,31 @@
+Script started on 2026-11-04 18:55:27+09:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="250" LINES="75"]
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mtouch practice/permission.txt[27m
+
+[7mchmod 600 practice/permission.txt[27m
+[7mls -l practice/permission.txt[27m
+
+[7mchmod 644 practice/permission.txt[27m
+[7mls -l practice/permission.txt[27m[A[A[A[A[A[A]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ touch practice/permission.txt
+
+chmod 600 practice/permission.txt
+ls -l practice/permission.txt
+
+chmod 644 practice/permission.txt
+[1Pls -l practice/permission.tx[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mtouch practice/permission.txt[27mtouch practice/permission.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mchmod 600 practice/permission.txt[27mchmod 600 practice/permission.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mls -l practice/permission.txt[27mls -l practice/permission.txt
+[?2004l-rw------- 1 avg21 avg21 0 Nov  4 18:55 practice/permission.txt
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mchmod 644 practice/permission.txt[27mchmod 644 practice/permission.txt
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mls -l practice/permission.txt[27mls -l practice/permission.txt
+[?2004l-rw-r--r-- 1 avg21 avg21 0 Nov  4 18:55 practice/permission.txt
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mmkdir -p practice/permission-dir[27mmkdir -p practice/permission-dir
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mchmod 700 practice/permission-dir[27mchmod 700 practice/permission-dir
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mls -ld practice/permission-dir[27mls -ld practice/permission-dir
+[?2004ldrwx------ 2 avg21 avg21 4096 Nov  4 18:56 [0m[01;34mpractice/permission-dir[0m
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mchmod 755 practice/permission-dir[27mchmod 755 practice/permission-dir
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mls -ld practice/permission-dir[27mls -ld practice/permission-dir
+[?2004ldrwxr-xr-x 2 avg21 avg21 4096 Nov  4 18:56 [0m[01;34mpractice/permission-dir[0m
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-04 18:56:47+09:00 [COMMAND_EXIT_CODE="0"]

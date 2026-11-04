@@ -1,0 +1,44 @@
+Script started on 2026-11-04 19:25:08+09:00 [TERM="xterm-256color" TTY="/dev/pts/9" COLUMNS="250" LINES="75"]
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker volume create workstation-data[27mdocker volume create workstation-data
+[?2004lworkstation-data
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker volume ls[27mdocker volume ls
+[?2004lDRIVER    VOLUME NAME
+local     workstation-data
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker run -d \[27m
+[7m  --name volume-test1 \[27m
+[7m  -v workstation-data:/data \[27m
+[7m  ubuntu:24.04 sleep infinity[27m[A[A[A]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ docker run -d \
+  --name volume-test1 \
+  -v workstation-data:/data \
+  ubuntu:24.04 sleep infinity
+[?2004lb038faba77d9e39033aa5ad666a7bf7de0fc9d8b0b608253695676f52ee39355
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker exec volume-test1 \[27m
+[7m  sh -c 'echo "Hello Docker Volume" > /data/hello.txt'[27m[Adocker exec volume-test1 \
+  sh -c 'echo "Hello Docker Volume" > /data/hello.txt'
+[?2004l[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker exec volume-test1 cat /data/hello.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec volume-test1 cat /data/hello.txt
+[?2004lHello Docker Volume
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker rm -f volume-test1[27mdocker rm -f volume-test1
+[?2004lvolume-test1
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE                    COMMAND                  CREATED             STATUS                        PORTS                                     NAMES
+bf0769d19a93   nginx:alpine             "/docker-entrypoint.…"   4 minutes ago       Up 4 minutes                  0.0.0.0:8082->80/tcp, [::]:8082->80/tcp   bind-web
+c32db618dd72   my-workstation-web:1.0   "/docker-entrypoint.…"   11 minutes ago      Up 11 minutes                 0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   my-workstation-web
+624f0cf30189   hello-world              "/hello"                 17 minutes ago      Exited (0) 17 minutes ago                                               hello-test
+d40b0158c191   ubuntu:24.04             "bash"                   22 minutes ago      Exited (137) 19 minutes ago                                             ubuntu-test
+b3ee77e3a130   hello-world              "/hello"                 23 minutes ago      Exited (0) 23 minutes ago                                               exciting_kapitsa
+0d165b6c44b6   hello-world              "/hello"                 About an hour ago   Exited (0) 25 minutes ago                                               great_newton
+00fc4c705a03   hello-world              "/hello"                 About an hour ago   Exited (0) 25 minutes ago                                               confident_banach
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker run -d \[27m
+[7m  --name volume-test2 \[27m
+[7m  -v workstation-data:/data \[27m
+[7m  ubuntu:24.04 sleep infinity[27m[A[A[A]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ docker run -d \
+  --name volume-test2 \
+  -v workstation-data:/data \
+  ubuntu:24.04 sleep infinity
+[?2004l874b21e9d83fc38d4d52d178f685fe359fc8db5998332182aabc9fce2f8fccd4
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker exec volume-test2 cat /data/hello.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker exec volume-test2 cat /data/hello.txt
+[?2004lHello Docker Volume
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-04 19:26:51+09:00 [COMMAND_EXIT_CODE="0"]

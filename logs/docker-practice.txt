@@ -1,0 +1,174 @@
+Script started on 2026-11-04 19:08:19+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="250" LINES="75"]
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker --version[27mdocker --version
+[?2004lDocker version 29.9.2, build a82e528
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker info[27mdocker info
+[?2004lClient:
+ Version:    29.9.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  agent: Docker AI Agent Runner (Docker Inc.)
+    Version:  v1.152.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-agent
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v1.33.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-ai
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.38.1
+    Path:     /usr/local/lib/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v5.6.1
+    Path:     /usr/local/lib/docker/cli-plugins/docker-compose
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.49.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-debug
+  desktop: Docker Desktop commands (Docker Inc.)
+    Version:  4.98.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-desktop
+  dhi: CLI for managing Docker Hardened Images (Docker Inc.)
+    Version:  v0.0.9
+    Path:     /usr/local/lib/docker/cli-plugins/docker-dhi
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.32
+    Path:     /usr/local/lib/docker/cli-plugins/docker-extension
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.1
+    Path:     /usr/local/lib/docker/cli-plugins/docker-init
+  mcp: Docker MCP Plugin (Docker Inc.)
+    Version:  v0.44.2
+    Path:     /usr/local/lib/docker/cli-plugins/docker-mcp
+  model: Docker Model Runner (Docker Inc.)
+    Version:  v1.2.9
+    Path:     /usr/local/lib/docker/cli-plugins/docker-model
+  offload: Docker Offload (Docker Inc.)
+    Version:  v0.7.35
+    Path:     /usr/local/lib/docker/cli-plugins/docker-offload
+  pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)
+    Version:  v0.3.2
+    Path:     /usr/local/lib/docker/cli-plugins/docker-pass
+  sandbox: "docker sandbox" is deprecated, use Docker Sandboxes instead (Docker Inc.)
+    Version:  v0.13.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-sandbox
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.27.0
+    Path:     /usr/local/lib/docker/cli-plugins/docker-scout
+
+Server:
+ Containers: 4
+  Running: 0
+  Paused: 0
+  Stopped: 4
+ Images: 2
+ Server Version: 29.9.2
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: local
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Discovered Devices:
+  cdi: docker.com/gpu=webgpu
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 nvidia runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: b7a25261e029d68978bbf290df0a62fc819b3c51
+ runc version: v1.5.2-0-g29dd3dc2
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.18.54.1-microsoft-standard-WSL2
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 12
+ Total Memory: 15.43GiB
+ Name: docker-desktop
+ ID: 47f65be8-396a-4914-8453-92d921d1adbd
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=unix:///var/run/docker-cli.sock
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  127.0.0.0/8
+  ::1/128
+ Live Restore Enabled: false
+ Firewall Backend: iptables
+
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker run --name hello-test hello-world[27mdocker run --name hello-test hello-world
+[?2004l
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker images[27mdocker images
+[?2004l                                                                                                                                                                                                                                      [1m[106m[30mi[0m[0m [96mInfo → [0m[0m [38;5;0m[48;5;14m U [0m In Use
+[39m[1mIMAGE[0m                [39m[1mID[0m             [39m[1mDISK USAGE[0m   [39m[1mCONTENT SIZE[0m   [39m[1mEXTRA[0m
+[34m[1mhello-world:latest[0m   [39mc567b231f656[0m       [39m25.9kB[0m         [39m9.49kB[0m   [38;5;0m[48;5;14m U [0m  
+[34m[1mubuntu:24.04[0m         [39mfe81560990fa[0m        [39m119MB[0m         [39m31.7MB[0m   [38;5;0m[48;5;14m U [0m  
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker ps[27mdocker ps
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker ps -a[27mdocker ps -a
+[?2004lCONTAINER ID   IMAGE          COMMAND    CREATED             STATUS                       PORTS     NAMES
+624f0cf30189   hello-world    "/hello"   26 seconds ago      Exited (0) 25 seconds ago              hello-test
+d40b0158c191   ubuntu:24.04   "bash"     5 minutes ago       Exited (137) 2 minutes ago             ubuntu-test
+b3ee77e3a130   hello-world    "/hello"   6 minutes ago       Exited (0) 6 minutes ago               exciting_kapitsa
+0d165b6c44b6   hello-world    "/hello"   51 minutes ago      Exited (0) 8 minutes ago               great_newton
+00fc4c705a03   hello-world    "/hello"   About an hour ago   Exited (0) 8 minutes ago               confident_banach
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mdocker logs hello-test[27mdocker logs hello-test
+[?2004l
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+[?2004h]0;avg21@DESKTOP-8HHL5VO: ~/dev-workstation[01;32mavg21@DESKTOP-8HHL5VO[00m:[01;34m~/dev-workstation[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2026-11-04 19:09:31+09:00 [COMMAND_EXIT_CODE="0"]
